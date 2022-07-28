@@ -9,20 +9,26 @@ public class SummerOutfit {
 
         int deg = Integer.parseInt(scan.nextLine());
         String time = scan.nextLine();
+        String outfit = "";
+        String shoes = "";
 
-        if (10 <= deg && deg <= 18){
-            switch (time){
+        if (10 <= deg && deg <= 18) {
+            switch (time) {
                 case "Morning":
+                    break;
+                case "Afternoon":
+                    break;
+                case "Evening":
+                    break;
             }
 
-        }else if (18 < deg && deg <= 24){
+        } else if (18 < deg && deg <= 24) {
 
-        }else {
+        } else {
 
         }
 
 
+    }
 
-            }
-
-        }
+}
