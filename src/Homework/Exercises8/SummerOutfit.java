@@ -12,16 +12,34 @@ public class SummerOutfit {
 
         //10 <= deg <= 18
 
-        if (deg >= 10 && deg <= 18 ){
-        switch (time){
-            case "Мorning":
-                System.out.printf("It's %.2d degrees, get your Sweatshirt and Sneakers. ", deg );
-                break;
-            case "Afternoon":
-                System.out.printf("It's %.2d degrees, get your Shirt and Moccasins. ", deg );
-                break;
+        if (deg >= 10 && deg <= 18) {
+            switch (time) {
+                case "Мorning":
+                    System.out.printf("It's %.2d degrees, get your Sweatshirt and Sneakers. ", deg);
+                    break;
+                case "Afternoon":
+                    System.out.printf("It's %.2d degrees, get your Shirt and Moccasins. ", deg);
+                    break;
+
+                case "Evening":
+                    System.out.printf("It's %.2d degrees, get your Shirt and Moccasins. ", deg);
+                    break;
+            }
+        } else if (18 < deg && deg <= 24) {
+            switch (time) {
+                case "Мorning":
+                    System.out.printf("It's %.2d degrees, get your YEAH and Sneakers. ", deg);
+                    break;
+                case "Afternoon":
+                    System.out.printf("It's %.2d degrees, get your Shirt and Moccasins. ", deg);
+                    break;
+
+                case "Evening":
+                    System.out.printf("It's %.2d degrees, get your Shirt and Moccasins. ", deg);
+                    break;
+
+            }
 
         }
-
     }
 }
