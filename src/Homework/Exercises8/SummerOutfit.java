@@ -1,7 +1,7 @@
 package Homework.Exercises8;
 
 import java.util.Scanner;
-
+// Da se pregleda i da se razpishe i po drugiq nachin
 public class SummerOutfit {
     public static void main(String[] args) {
 
