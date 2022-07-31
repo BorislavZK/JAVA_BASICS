@@ -13,19 +13,12 @@ public class FishingBoat {
 
         double price = 0;
 
-        switch (season){
-            case "Spring":
-                price = 3000;
-                break;
-            case "Summer":
-            case "Autumn":
-                price = 4200;
-                break;
-            case "Winter":
-                price = 2600;
-                break;
-            default:
-                break;
+        if ("Spring".equals(season)) {
+            price = 3000;
+        } else if ("Summer".equals(season) || "Autumn".equals(season)) {
+            price = 4200;
+        } else if ("Winter".equals(season)) {
+            price = 2600;
         }
         if (fisherman <= 6){
             price = price - (price * 0.10 );
@@ -39,7 +32,8 @@ public class FishingBoat {
         }
 
         if ( fisherman % 2 == 0 && !season.equals("Autumn")){
-            price = price - ( price * 0.05 );
+            //price = price - ( price * 0.05 );
+            price -= price * 0.05;
         }
 
         if ( budget >= price){
