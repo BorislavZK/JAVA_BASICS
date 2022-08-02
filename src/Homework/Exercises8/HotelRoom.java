@@ -11,16 +11,10 @@ public class HotelRoom {
 
         double studioPricePerNight = 0.0;
         double apartmentPricePerNight = 0.0;
-        //double studioDiscount = 0.0;
-        //double apartmentDiscount = 0.0;
         double studioTotal = 0.0;
         double apartmentTotal = 0.0;
-//За студио, при повече от 7 нощувки през май и октомври : 5% намаление.
-//За студио, при повече от 14 нощувки през май и октомври : 30% намаление.
-//За студио, при повече от 14 нощувки през юни и септември: 20% намаление.
-//За апартамент, при повече от 14 нощувки, без значение от месеца : 10% намаление.
 
-        switch ("month") {
+        switch (month) {
             case "May":
             case "October":
                 studioPricePerNight = 50;
@@ -36,11 +30,13 @@ public class HotelRoom {
                     studioTotal = studioPricePerNight * nights;
                     apartmentTotal = apartmentPricePerNight * nights;
                 }
-            break;
+                break;
 
             case "June":
             case "September":
-                if (nights > 14){
+                studioPricePerNight = 75.20;
+                apartmentPricePerNight = 68.70;
+                if (nights > 14) {
                     studioTotal = studioPricePerNight * nights - (studioTotal * 0.20);
                     apartmentTotal = apartmentPricePerNight * nights;
                 }
@@ -48,16 +44,16 @@ public class HotelRoom {
 
             case "July":
             case "August":
+                studioPricePerNight = 76;
+                apartmentPricePerNight = 77;
                 studioTotal = studioPricePerNight * nights;
                 apartmentTotal = apartmentPricePerNight * nights;
                 break;
-
-                //На първия ред: "Apartment: {цена за целият престой} lv."
-                //На втория ред: "Studio: {цена за целият престой} lv."
         }
 
         System.out.printf("Apartment: %d lv.%n", apartmentTotal);
-        System.out.printf("Studio: %d",studioTotal);
-
+        System.out.printf("Studio: %d lv.", studioTotal);
     }
 }
+
+
