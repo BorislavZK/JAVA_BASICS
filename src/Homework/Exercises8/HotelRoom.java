@@ -19,16 +19,19 @@ public class HotelRoom {
             case "October":
                 studioPricePerNight = 50;
                 apartmentPricePerNight = 65;
-                if (nights > 7 && nights < 14) {
-                    studioTotal = studioPricePerNight * nights - (studioTotal * 0.05);
+                if (nights > 7 && nights <= 14) {
+                    studioTotal = studioPricePerNight * nights;
+                    studioTotal = studioTotal * 0.95;
                     apartmentTotal = apartmentPricePerNight * nights;
                 } else if (nights > 14) {
-                    studioTotal = studioPricePerNight * nights - (studioTotal * 0.30);
-                    apartmentTotal = apartmentPricePerNight * nights - (apartmentTotal * 0.20);
+                    studioTotal = (studioPricePerNight * 0.7) * nights;
+                    apartmentTotal = apartmentPricePerNight * nights;
+                    apartmentTotal = apartmentTotal * 0.9;
 
                 } else {
                     studioTotal = studioPricePerNight * nights;
                     apartmentTotal = apartmentPricePerNight * nights;
+
                 }
                 break;
 
@@ -37,7 +40,12 @@ public class HotelRoom {
                 studioPricePerNight = 75.20;
                 apartmentPricePerNight = 68.70;
                 if (nights > 14) {
-                    studioTotal = studioPricePerNight * nights - (studioTotal * 0.20);
+                    studioTotal = studioPricePerNight * nights;
+                    studioTotal = studioTotal * 0.80;
+                    apartmentTotal = apartmentPricePerNight * nights;
+                    apartmentTotal = apartmentTotal * 0.9;
+                } else {
+                    studioTotal = studioPricePerNight * nights;
                     apartmentTotal = apartmentPricePerNight * nights;
                 }
                 break;
@@ -48,11 +56,17 @@ public class HotelRoom {
                 apartmentPricePerNight = 77;
                 studioTotal = studioPricePerNight * nights;
                 apartmentTotal = apartmentPricePerNight * nights;
+                if ( nights > 14 ){
+                    apartmentTotal = apartmentPricePerNight * nights;
+                    apartmentTotal = apartmentTotal * 0.9;
+
+                }
+
                 break;
         }
 
-        System.out.printf("Apartment: %d lv.%n", apartmentTotal);
-        System.out.printf("Studio: %d lv.", studioTotal);
+        System.out.printf("Apartment: %.2f lv.%n", apartmentTotal);
+        System.out.printf("Studio: %.2f lv.", studioTotal);
     }
 }
 
