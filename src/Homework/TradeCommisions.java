@@ -8,6 +8,7 @@ public class TradeCommisions {
         String town = scan.nextLine();
         double sales = Double.parseDouble(scan.nextLine());
         double percent = 0;
+
         switch (town){
             case "Sofia":
                 if (sales >= 0 && sales <= 500){
