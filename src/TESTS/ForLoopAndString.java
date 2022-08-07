@@ -6,7 +6,12 @@ public class ForLoopAndString {
 
         String name = "bobi";
 
-        char symbol = name.charAt(3);
-        System.out.println(symbol);
+        for (int i = 0; i <= name.length() - 1; i ++ ) {
+            char symbol = name.charAt(i);
+            System.out.println(symbol);
+        }
+
+        //        char symbol = name.charAt(2);
+        //        System.out.println(symbol);
     }
 }
