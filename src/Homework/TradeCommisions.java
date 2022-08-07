@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class TradeCommisions {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         String town = scan.nextLine();
+
         double sales = Double.parseDouble(scan.nextLine());
         double percent = 0;
 
