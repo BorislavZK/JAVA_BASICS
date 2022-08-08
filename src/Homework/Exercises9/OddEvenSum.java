@@ -12,20 +12,26 @@ public class OddEvenSum {
         int oddSum = 0;
         int evenSum = 0;
 
-        for (int i = 1; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             int element = Integer.parseInt(scan.nextLine());
-            if (i % 2 == 0 ){
+            if (i % 2 == 0) {
                 evenSum += element;
-            }else {
+            } else {
                 oddSum += element;
             }
-            
-        }
-        if
-        
-    }
 
-}
+        }
+        if (oddSum == evenSum) {
+            System.out.println("Yes");
+            System.out.printf("Sum = %d", oddSum);
+        } else {
+            System.out.println("No");
+            System.out.printf("Diff = %d", Math.abs(evenSum - oddSum));
+        }
+
+        }
+
+    }
 
 
 
