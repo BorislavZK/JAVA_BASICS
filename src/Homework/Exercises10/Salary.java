@@ -15,7 +15,7 @@ public class Salary {
                 case "Facebook":
                     salary -= 150;
                     break;
-                case "Insagram":
+                case "Instagram":
                     salary -= 100;
                     break;
                 case "Reddit":
@@ -25,11 +25,11 @@ public class Salary {
 
         }
         if (salary <= 0) {
-            System.out.println("You have lost you salary");
+            System.out.println("You have lost your salary.");
+        } else {
+            System.out.println();
+            System.out.println(salary);
 
-        }
-        if (salary > 0) {
-            System.out.printf("%d", salary);
         }
     }
 }
