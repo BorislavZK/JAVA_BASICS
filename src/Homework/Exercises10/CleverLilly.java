@@ -16,7 +16,7 @@ public class CleverLilly {
 
         for (int i = 1; i <= age; i++) {
             if (i % 2 == 0) {
-                moneyForBD += 10.00 * i / 2.00;
+                moneyForBD += 10.00 * (i / 2.00);
                 brother++;
 
             } else {
