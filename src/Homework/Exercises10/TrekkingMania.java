@@ -29,14 +29,19 @@ public class TrekkingMania {
             }
 
         }
-        int allHikers = musala + montblanc + kilimanjaro + everest;
+        int allHikers = musala + montblanc + kilimanjaro + k2 + everest;
+        double musPer = (musala * 1.00) / allHikers * 100.00;
+        double monPer = (montblanc * 1.00) / allHikers * 100;
+        double kiliPer = (kilimanjaro * 1.00) / allHikers * 100;
+        double k2Per = (k2 * 1.00) / allHikers * 100;
+        double everestPer = (everest * 1.00) / allHikers * 100;
 
-        System.out.printf("%.2f%%%n", (musala * 1.00) / allHikers * 100);
-        System.out.printf("%.2f%%%n", (montblanc * 1.00) / allHikers * 100);
-        System.out.printf("%.2f%%%n", (kilimanjaro * 1.00) / allHikers * 100);
-        System.out.printf("%.2f%%%n", (k2 * 1.00) / allHikers * 100);
-        System.out.printf("%.2f%%%n", (everest * 1.00) / allHikers * 100);
 
+        System.out.printf("%.2f%%%n", musPer);
+        System.out.printf("%.2f%%%n", monPer);
+        System.out.printf("%.2f%%%n", kiliPer);
+        System.out.printf("%.2f%%%n", k2Per);
+        System.out.printf("%.2f%%%n", everestPer);
 
     }
 }
