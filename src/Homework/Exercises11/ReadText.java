@@ -8,13 +8,12 @@ public class ReadText {
 
         String input = scan.nextLine();
 
-        while (!input.equals("stop")) {
+        while (!input.equals("Stop")) {
 
             System.out.println(input);
             input = scan.nextLine();
 
         }
-
 
     }
 }
