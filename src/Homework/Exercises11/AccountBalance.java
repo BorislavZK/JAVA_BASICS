@@ -17,7 +17,7 @@ public class AccountBalance {
                 break;
             }
             amount += currentSum;
-            System.out.printf("Increase %.2f\n", currentSum);
+            System.out.printf("Increase: %.2f\n", currentSum);
 
             input = scan.nextLine();
         }
