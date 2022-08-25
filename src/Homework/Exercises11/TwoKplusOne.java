@@ -7,5 +7,8 @@ public class TwoKplusOne {
         Scanner scan = new Scanner(System.in);
 
 
+
+
+
     }
 }
