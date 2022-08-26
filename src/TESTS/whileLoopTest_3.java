@@ -8,13 +8,15 @@ public class whileLoopTest_3 {
         String input = scan.nextLine();
 
         while (!input.equals("stop")){
+            int number = Integer.parseInt(scan.nextLine());
 
-            System.out.println(input);
+            System.out.println(input + " print");
+            System.out.println(number + " print");
+
             input = scan.nextLine();
 
             if (input.equals("stop")){
-
-                System.out.println("STOP!");
+                System.out.println("STOP" + " print");
             }
 
         }
