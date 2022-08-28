@@ -39,13 +39,15 @@ public class ExamPreparation {
         double avgScore = allGradesSum / gradeCounter;
 
 
-        if (isFalse) { // provalil
+        if (isFalse) {
             System.out.printf("You need a break, %d poor grades.", poorGradeCounter);
 
 
         } else {
-            System.out.printf("Average score: %.2f\n" + "Number of problems: %.2d\n" + "Last problem: %s\n", avgScore, gradeCounter, lastProblem);
 
+            System.out.printf("Average score: %.2f\n", avgScore);
+            System.out.printf("Number of problems: %d\n", gradeCounter);
+            System.out.printf("Last problem: %s\n", lastProblem);
 
         }
     }
