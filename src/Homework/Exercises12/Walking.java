@@ -28,7 +28,7 @@ public class Walking {
             System.out.printf("Goal reached! Good job!\n" +
                     "%d steps over the goal!", Math.abs(steps - goal));
         } else {
-            System.out.printf("%d more steps to reach goal.");
+            System.out.printf("%d more steps to reach goal.", goal - steps);
         }
     }
 }
