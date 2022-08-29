@@ -8,14 +8,22 @@ public class Cake {
 
         int cakeWidth = Integer.parseInt(scan.nextLine());
         int cakeLength = Integer.parseInt(scan.nextLine());
-        int cakeAllPieces = cakeWidth * cakeLength;
         int cakePiecesTaken = Integer.parseInt(scan.nextLine());
+
+        int cakeAllPieces = cakeWidth * cakeLength;
 
 
         while (cakeAllPieces > cakePiecesTaken){
 
+            String input = scan.nextLine();
 
-            cakePiecesTaken = Integer.parseInt(scan.nextLine());
+            if (input.equals("STOP")){
+                break;
+            }
+
+
+
+            cakePiecesTaken += Integer.parseInt(input);
 
 
 
