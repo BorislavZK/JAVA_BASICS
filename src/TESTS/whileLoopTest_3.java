@@ -7,6 +7,8 @@ public class whileLoopTest_3 {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
 
+        // cheteme dvoika String i chislo
+
         while (!input.equals("stop")){
             int number = Integer.parseInt(scan.nextLine());
 

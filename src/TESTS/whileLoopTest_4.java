@@ -8,6 +8,8 @@ public class whileLoopTest_4 {
 
         int num = Integer.parseInt(scan.nextLine());
 
+        // chete chila i gi natrupva dokato stignat 100
+
         while (num <= 100) {
 
             int num2 = Integer.parseInt(scan.nextLine());
