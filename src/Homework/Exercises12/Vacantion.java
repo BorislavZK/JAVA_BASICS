@@ -14,7 +14,7 @@ public class Vacantion {
         int allDays = 0;
 
         while (moneyOnHand < vacantionPrice) {
-            String action = scan.nextLine();
+            String action= scan.nextLine();
             double sum = Double.parseDouble(scan.nextLine());
             allDays++;
 
@@ -43,7 +43,7 @@ public class Vacantion {
         }
 
         if (isFaild) {
-            System.out.printf("You can't save the money.You can't save the money.\n" +
+            System.out.printf("You can't save the money.\n" +
                     "%d", allDays);
 
         } else {
