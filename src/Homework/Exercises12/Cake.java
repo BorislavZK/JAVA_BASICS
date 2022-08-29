@@ -8,26 +8,32 @@ public class Cake {
 
         int cakeWidth = Integer.parseInt(scan.nextLine());
         int cakeLength = Integer.parseInt(scan.nextLine());
-        int cakePiecesTaken = Integer.parseInt(scan.nextLine());
+        int cakeAllPieces = cakeWidth * cakeLength; // vsichka parcheta
+        int cakePiecesTake = Integer.parseInt(scan.nextLine());  //vzima 1 put
+        boolean ifStop = false;
 
-        int cakeAllPieces = cakeWidth * cakeLength;
-
-
-        while (cakeAllPieces > cakePiecesTaken){
+        while (cakeAllPieces > cakePiecesTake) {
 
             String input = scan.nextLine();
 
-            if (input.equals("STOP")){
+            if (input.equals("STOP")) {
+                ifStop = true;
                 break;
             }
 
+            cakeAllPieces -= Integer.parseInt(input);
 
+        }
 
-            cakePiecesTaken += Integer.parseInt(input);
+        int cakeLeft = cakeAllPieces - cakePiecesTake;
 
+        if (!ifStop) {
 
+            System.out.printf("No more cake left! You need %d pieces more.", Math.abs(cakeLeft));
 
+        } else {
 
+            System.out.printf("%d pieces are left.", cakeLeft);
         }
 
     }
