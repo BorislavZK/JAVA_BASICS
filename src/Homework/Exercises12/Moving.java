@@ -9,8 +9,25 @@ public class Moving {
         int roomLength = Integer.parseInt(scan.nextLine());
         int roomWidth = Integer.parseInt(scan.nextLine());
         int roomHeight = Integer.parseInt(scan.nextLine());
+        boolean ifDone = false;
 
         int roomVolume = roomLength * roomWidth * roomHeight;
+
+        int boxes = Integer.parseInt(scan.nextLine());
+
+        while (roomVolume < boxes){
+
+            String input = scan.nextLine();
+
+            if (input.equals("Done")){
+                ifDone = true;
+                break;
+
+            }
+
+            roomVolume -= Integer.parseInt(input);
+
+        }
 
 
 

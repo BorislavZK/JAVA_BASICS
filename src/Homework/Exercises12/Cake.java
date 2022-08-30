@@ -9,8 +9,9 @@ public class Cake {
         int cakeWidth = Integer.parseInt(scan.nextLine());
         int cakeLength = Integer.parseInt(scan.nextLine());
         int cakeAllPieces = cakeWidth * cakeLength; // vsichka parcheta
-        int cakePiecesTake = Integer.parseInt(scan.nextLine());  //vzima 1 put
         boolean ifStop = false;
+
+        int cakePiecesTake = Integer.parseInt(scan.nextLine());  //vzima 1 put
 
         while (cakeAllPieces > cakePiecesTake) {
 
