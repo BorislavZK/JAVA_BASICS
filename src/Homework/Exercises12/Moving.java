@@ -15,7 +15,7 @@ public class Moving {
 
         int boxes = Integer.parseInt(scan.nextLine());
 
-        while (roomVolume < boxes){
+        while (roomVolume > boxes){
 
             String input = scan.nextLine();
 
@@ -29,7 +29,15 @@ public class Moving {
 
         }
 
+        int roomVolumeLeft = roomVolume - boxes;
 
+        if (ifDone){
+
+            System.out.printf("%d Cubic meters left.", roomVolumeLeft);
+        }else{
+
+            System.out.printf("No more free space! You need %d Cubic meters more.", Math.abs(roomVolumeLeft));
+        }
 
     }
 }
