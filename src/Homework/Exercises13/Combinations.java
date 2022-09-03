@@ -7,5 +7,6 @@ public class Combinations {
 
         Scanner scan = new Scanner(System.in);
 
+
     }
 }
