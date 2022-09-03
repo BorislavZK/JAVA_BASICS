@@ -24,7 +24,7 @@ public class CinemaTickets {
             while (!ticketType.equals("End")){
 
                 soldTicket ++;
-                totalTicket++;
+                totalTicket ++;
 
                 switch (ticketType){
 
@@ -47,18 +47,12 @@ public class CinemaTickets {
 
                 ticketType = scan.nextLine();
 
-
             }
-            //"{името на филма} - {процент запълненост на залата}% full."
-            System.out.printf("%s - %.2f% full.\n",movie, 1.0 * soldTicket / freePaces * 100 );
 
+            System.out.printf("%s - %.2f%% full.\n",movie, 1.0 * soldTicket / freePaces * 100 );
             movie = scan.nextLine();
         }
 
-        //"Total tickets: {общият брой закупени билети за всички филми}"
-        //"{процент на студентските билети}% student tickets."
-        //"{процент на стандартните билети}% standard tickets."
-        //"{процент на детските билети}% kids tickets."
 
         System.out.printf("Total tickets: %d\n", totalTicket);
         System.out.printf("%.2f%% student tickets.\n", 1.0 * studentTicket / totalTicket * 100);
