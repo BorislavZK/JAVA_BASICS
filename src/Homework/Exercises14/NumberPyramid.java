@@ -8,7 +8,7 @@ public class NumberPyramid {
         Scanner scan = new Scanner(System.in);
 
         int n = Integer.parseInt(scan.nextLine());
-        int currentNumber = 0;
+        int currentNumber = 1;
         boolean flag = false;
 
         for ( int rows =1; rows <=n; rows++){
