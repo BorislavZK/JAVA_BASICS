@@ -22,7 +22,7 @@ public class TrainTheTrainers {
             }
              totalGrades += sumCurrentPresentationGrade;
 
-            System.out.printf("%s-%.2f\n", presentationName, sumCurrentPresentationGrade / jury);
+            System.out.printf("%s - %.2f.\n", presentationName, sumCurrentPresentationGrade / jury);
 
             input = scan.nextLine();
         }
