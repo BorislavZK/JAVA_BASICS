@@ -9,10 +9,24 @@ public class ForLoopAndString_V2 {
         String text = scan.nextLine();
 
         int length = text.length();
+        String reverse = "";
 
-        for (int i = 0; i < length ; i++) {
-            System.out.println(text.charAt(i));
 
+        // OT PURVI KUM POSLEDEN ZNAK
+
+        //for (int i = 0; i < length ; i++) {
+         //   System.out.println(text.charAt(i));
+
+        //}
+
+
+
+        // REVERSE STRING    -- length - 1  dava posledniq simvol na stringa
+        for (int i = length -1 ; i >= 0 ; i--) {
+            //System.out.println(text.charAt(i));
+            reverse += (text.charAt(i));
         }
+
+        System.out.println(reverse);
     }
 }
