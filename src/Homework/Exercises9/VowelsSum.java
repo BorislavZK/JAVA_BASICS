@@ -12,7 +12,9 @@ public class VowelsSum {
         int sum = 0;
 
         for (int i = 0; i < input.length(); i++) {
-            switch (input.charAt(i)) {
+
+            char symbol = input.charAt(i);
+            switch (symbol) {
                 case 'a':
                     sum += 1;
                     break;
