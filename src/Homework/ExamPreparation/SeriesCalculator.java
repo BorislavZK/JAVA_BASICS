@@ -18,13 +18,8 @@ public class SeriesCalculator {
         double totalTime = episodeTotalPlusAd * episodes * seasons + specialTimeEp;
 
 
-        System.out.printf("Total time needed to watch the {име на сериал} series is {време} minutes.");
-
-
-
-
-
-
+        System.out.printf("Total time needed to watch the %s series is %.0f minutes.", tvSeries, totalTime);
 
     }
 }
+
