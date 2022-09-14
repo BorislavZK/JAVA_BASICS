@@ -9,7 +9,19 @@ public class SeriesCalculator {
         String tvSeries = scan.nextLine();
         int seasons = Integer.parseInt(scan.nextLine());
         int episodes = Integer.parseInt(scan.nextLine());
-        int episodeLengthNoAdv = Integer.parseInt(scan.nextLine());
+        double episodeLengthNoAdv = Integer.parseInt(scan.nextLine());
+
+        double totalAdv = episodeLengthNoAdv * 0.20;
+        double episodeTotalPlusAd = episodeLengthNoAdv + totalAdv;
+        double specialTimeEp = seasons * 10;
+
+        double totalTime = episodeTotalPlusAd * episodes * seasons + specialTimeEp;
+
+
+        System.out.printf("Total time needed to watch the {име на сериал} series is {време} minutes.");
+
+
+
 
 
 
