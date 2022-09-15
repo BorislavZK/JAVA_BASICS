@@ -15,7 +15,7 @@ public class Balls {
         int white = 0;
         int black = 0;
         int others = 0;
-        double totalPoints = 0;
+        int totalPoints = 0;
 
         for (int i = 1; i <= n; i++) {
 
@@ -55,7 +55,7 @@ public class Balls {
 
         }
 
-        System.out.println("Total points: " + totalPoints);
+        System.out.printf("Total points: %d\n", totalPoints);
         System.out.println("Red balls: " + red);
         System.out.println("Orange balls: " + orange);
         System.out.println("Yellow balls: " + yellow);
