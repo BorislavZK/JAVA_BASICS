@@ -12,7 +12,7 @@ public class CareOfPuppy {
         int allEatenFood = 0;
         String input = scan.nextLine();
 
-        while (!input.equals("Adopted")){
+        while (!input.equals("Adopted")) {
             int currentFood = Integer.parseInt(input);
             allEatenFood += currentFood;
 
@@ -21,12 +21,13 @@ public class CareOfPuppy {
 
         int diff = Math.abs(allEatenFood - foodInGr);
 
-        if (allEatenFood >= foodInGr){
+        if (allEatenFood <= foodInGr) {
 
             System.out.printf("Food is enough! Leftovers: %d grams.", diff);
-        }else {
 
-            System.out.printf("Food is enough! Leftovers: %d grams.", diff);
+        } else {
+
+            System.out.printf("Food is not enough. You need %d grams more.", diff);
         }
 
     }
