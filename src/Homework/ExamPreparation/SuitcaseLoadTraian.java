@@ -33,4 +33,4 @@ public class SuitcaseLoadTraian {
             System.out.printf("Statistic: %d suitcases loaded.", counter);
         }
     }
-}
+

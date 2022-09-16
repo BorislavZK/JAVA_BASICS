@@ -8,5 +8,7 @@ public class SuitcasesLoad {
         Scanner scan = new Scanner(System.in);
 
 
+
+
     }
 }
