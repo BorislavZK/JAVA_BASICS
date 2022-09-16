@@ -38,6 +38,3 @@ public class SuitcaseLoad_DIDO_1 {
         scan.close();
     }
 }
-
-    }
-}
