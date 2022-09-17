@@ -33,9 +33,9 @@ public class DivisionWithoutRemainder {
 
         }
 
-        System.out.printf("%.2f %%\n", (naDve / n) * 100);
-        System.out.printf("%.2f %%\n", (naTri / n) * 100);
-        System.out.printf("%.2f %%\n", (naChetiri / n) * 100);
+        System.out.printf("%.2f%%\n",(naDve / n) * 100);
+        System.out.printf("%.2f%%\n",(naTri / n) * 100);
+        System.out.printf("%.2f%%\n",(naChetiri / n) * 100);
 
     }
 }
