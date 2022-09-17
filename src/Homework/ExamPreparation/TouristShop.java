@@ -38,7 +38,7 @@ public class TouristShop {
         }
 
         if (flag) {
-            System.out.printf("You bought %d products for %.2f leva.\n", counter, totalSum);
+            System.out.printf("You bought %d products for %.2f leva.\n",counter,totalSum);
         } else {
             System.out.printf("You need %.2f leva!", moneyNeeded);
         }
