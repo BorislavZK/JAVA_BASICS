@@ -12,9 +12,6 @@ public class CoffeeMachine {
         double price = 0;
         double totalPrice = 0;
 
-
-
-
         switch (drink) {
             case "Espresso":
                 if (sugar.equals("Without")) {
@@ -56,7 +53,9 @@ public class CoffeeMachine {
 
         if (sugar.equals("Without")){
             price *= 0.65;
-        }else if (drink.equals("Espresso") && cups >= 5){
+        }
+
+        if (drink.equals("Espresso") && cups >= 5){
             price *= 0.75;
         }
 
@@ -65,6 +64,8 @@ public class CoffeeMachine {
         if (totalPrice > 15){
             totalPrice *= 0.80;
         }
+
+        System.out.printf("You bought %d cups of %s for %.2f lv.",cups,drink,totalPrice);
 
 
     }
