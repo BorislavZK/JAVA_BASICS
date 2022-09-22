@@ -22,8 +22,14 @@ public class Renovation {
 
             totalVolume -= paint;
 
+
             if (totalVolume < 0 ){
-                System.out.printf("All walls are painted and you have %.0f l paint left!",Math.abs(totalVolume-paint));
+                System.out.printf("All walls are painted and you have %.0f l paint left!",Math.abs(totalVolume));
+                break;
+            }
+
+            if (totalVolume == 0 ) {
+                System.out.print("All walls are painted! Great job, Pesho!");
                 break;
             }
 
@@ -31,12 +37,9 @@ public class Renovation {
         }
 
         if(command.equals("Tired!")){
-
             System.out.printf("%.0f quadratic m left.",totalVolume);
 
         }
-
-
 
 
     }
