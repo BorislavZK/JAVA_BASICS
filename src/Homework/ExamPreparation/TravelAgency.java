@@ -75,6 +75,8 @@ public class TravelAgency {
 
             System.out.printf("The price is %.2dlv! Have a nice time!");
 
+        } else {
+
         }
 
 
