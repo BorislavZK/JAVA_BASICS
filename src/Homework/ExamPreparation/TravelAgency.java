@@ -69,6 +69,10 @@ public class TravelAgency {
                     break;
             }
 
+            if (days > 7){
+                days = days - 1;
+            }
+
 
 
             totalPrice = pricePerDay * days;
