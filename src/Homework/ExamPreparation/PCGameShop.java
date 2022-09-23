@@ -11,7 +11,7 @@ public class PCGameShop {
         int hearthstone = 0;
         int fornite = 0;
         int ovewatch = 0;
-        int others = 8;
+        int others = 0;
 
         for (int i = 1; i <= n; i++) {
 
@@ -27,8 +27,17 @@ public class PCGameShop {
                 others++;
             }
 
-
         }
+
+        double hearthstonePer = (100.00 / n) * hearthstone;
+        double fornitePer = (100.00 / n) * fornite;
+        double ovewatchPer = (100.00 / n) * ovewatch;
+        double othersPer = (100.00 / n) * others;
+
+        System.out.printf("Hearthstone - %.2f%%\n", hearthstonePer);
+        System.out.printf("Fornite - %.2f%%\n", fornitePer);
+        System.out.printf("Overwatch - %.2f%%\n", ovewatchPer);
+        System.out.printf("Others - %.2f%%", othersPer);
 
 
     }
