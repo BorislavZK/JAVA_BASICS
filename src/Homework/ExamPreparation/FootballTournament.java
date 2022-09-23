@@ -15,18 +15,25 @@ public class FootballTournament {
         int points = 0;
 
 
+        if (games == 0){
+            System.out.printf("%s hasn't played any games during this season", team);
+            return;
+        }
+
+
         for (int i = 1; i <= games ; i++) {
 
             String result = scan.nextLine();
 
             if(result.equals("W")){
                 w++;
+                points += 3;
             }else if (result.equals("D")){
                 d++;
+                points += 1;
             }else{
                 l++;
             }
-
 
             //	W - Отборът е победител и получава 3 точки
             //	D - Срещата е завършила без победител и отборът получава 1 точка
