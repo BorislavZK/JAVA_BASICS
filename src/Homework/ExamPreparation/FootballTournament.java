@@ -16,7 +16,7 @@ public class FootballTournament {
 
 
         if (games == 0){
-            System.out.printf("%s hasn't played any games during this season", team);
+            System.out.printf("%s hasn't played any games during this season.", team);
             return; //BREAK
         }
 
@@ -47,11 +47,16 @@ public class FootballTournament {
 
         }
 
-        double
+        double wPer = (100.00 / games) * w;
+        double dPer = (100.00 / games) * d;
+        double lPer = (100.00 / games) * l;
 
-        System.out.printf("%s has won %d points during this season\n", team,points);
+        System.out.printf("%s has won %d points during this season.\n", team,points);
         System.out.println("Total stats:");
-        System.out.printf("## W: {брой спечелени игри}");
+        System.out.printf("## W: %d\n",w);
+        System.out.printf("## D: %d\n",d);
+        System.out.printf("## L: %d\n",l);
+        System.out.printf("Win rate: %.2f%%\n",wPer);
 
 
     }
