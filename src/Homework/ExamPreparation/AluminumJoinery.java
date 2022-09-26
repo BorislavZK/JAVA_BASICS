@@ -14,13 +14,6 @@ public class AluminumJoinery {
         double price = 0.0;
         double totalPrice = 0.0;
 
-        /*
-        if (cont < 10) {
-            System.out.println("Invalid order");
-            return;
-        }
-
-         */
 
         switch (type) {
 
