@@ -17,7 +17,7 @@ public class FootballTournament {
 
         if (games == 0){
             System.out.printf("%s hasn't played any games during this season.", team);
-            return; //BREAK
+            return;
         }
 
 
@@ -34,16 +34,6 @@ public class FootballTournament {
             }else{
                 l++;
             }
-
-            //	W - Отборът е победител и получава 3 точки
-            //	D - Срещата е завършила без победител и отборът получава 1 точка
-            //	L - Отборът е загубил срещата и не получава точки
-
-            //"Total stats:"
-            //"## W: {брой спечелени игри}"
-            //"## D: {брой игри, завършили наравно}"
-            //"## L: {брой загубени игри}"
-            //"Win rate: {процент спечелени игри}%"
 
         }
 
