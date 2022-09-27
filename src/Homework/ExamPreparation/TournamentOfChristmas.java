@@ -13,8 +13,8 @@ public class TournamentOfChristmas {
 
         for (int i = 1; i <= days; i++) {
 
-            int winPerDayCounter = 0;
-            int loosePerDayCounter = 0;
+            int winCounter = 0;
+            int looseCounter = 0;
             double money = 0;
             int dailyWin = 0;
 
@@ -25,27 +25,26 @@ public class TournamentOfChristmas {
 
                 if (result.equals("win")) {
                     money += 20;
-                    winPerDayCounter++;
+                    winCounter++;
 
                 } else {
-
-                    loosePerDayCounter++;
+                    looseCounter++;
                 }
 
                 sport = scan.nextLine();
             }
 
-            if (winPerDayCounter > loosePerDayCounter) {
+            if (winCounter > looseCounter) {
                 money *= 1.1;
                 dailyWin += 1;
-
+                winTotal += dailyWin;
             }
-            winTotal += dailyWin;
+
             totalMoney += money;
 
         }
 
-        if (winTotal == days) {
+        if (winTotal >= days) {
             totalMoney *= 1.2;
             System.out.printf("You won the tournament! Total raised money: %.2f", totalMoney);
 
