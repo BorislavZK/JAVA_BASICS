@@ -45,7 +45,14 @@ public class FoodForPets {
 
         }
 
-        System.out.printf("Total eaten biscuits: {количество изядени бисквитки}gr.", biscuitTotal);
+        double dogPer = (totalDogEaten / foodTotalEaten) * 100; // procent izqdena hrana na kucheto
+        double catPer = (totalCatEaten / foodTotalEaten) * 100; // procent izqdena hrana na kotkata
+        double totalEatenPer = (foodTotalEaten / food) * 100;
+
+        System.out.printf("Total eaten biscuits: %d gr.\n", Math.round(biscuitTotal));
+        System.out.printf("%.2f%% of the food has been eaten.\n", totalEatenPer);
+        System.out.printf("%.2f%% eaten from the dog.\n", dogPer);
+        System.out.printf("%.2f%% eaten from the cat.", catPer);
 
 
     }
