@@ -15,7 +15,7 @@ public class FoodForPets {
         double totalDogEaten = 0; // total kuche
         double totalCatEaten = 0; // total kotka
 
-        for (int i = 0; i < days; i++) {
+        for (int i = 1; i < days; i++) {
 
             double foodTogetherEaten = 0; //nuliram dnevnata hrana.
             double biscuits = 0; // nuliram biskvitite
@@ -29,7 +29,7 @@ public class FoodForPets {
             totalCatEaten += catsFood; // total na kotkata
 
             //BISKVITITE
-            if (days % 3 == 0){
+            if (days % 2 == 0 && days != 0){
                 biscuits = ( foodTogetherEaten * 0.1);  // 10% ot izqdenata hrana za denq
                 biscuitTotal += biscuits; // obshto izqdeni biskviti
                 foodTotalEaten += biscuits; // kum total izqdenata hrana dobavqm biskvitite
