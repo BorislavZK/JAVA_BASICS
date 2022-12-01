@@ -19,7 +19,7 @@ public class BarcodeGenerator {
         int secondEnd = (end / 100) % 10;
         int thirdEnd = (end / 10) % 10;
         int fourthEnd = end % 10;
-
+        
         for (int i = firstStart; i <= firstEnd; i++) {
             for (int j = secondStart; j <= secondEnd; j++) {
                 for (int k = thirdStart; k <= thirdEnd; k++) {

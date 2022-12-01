@@ -2,10 +2,11 @@ package Homework.ExamPreparation;
 import java.util.Scanner;
 
 public class SuitcaseLoadTraian {
-
-
         public static void main(String[] args) {
+
+
             Scanner scanner = new Scanner(System.in);
+
             double capacity = Double.parseDouble(scanner.nextLine());
             String input = scanner.nextLine();
             int counter = 0;
