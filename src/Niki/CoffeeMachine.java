@@ -1,4 +1,4 @@
-package Homework;
+package Niki;
 
 import java.util.Scanner;
 
@@ -6,13 +6,14 @@ public class CoffeeMachine {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        String drink = scan.nextLine();
+        String beverage = scan.nextLine();
         String sugar = scan.nextLine();
-        int cups = Integer.parseInt(scan.nextLine());
+        int countBeverages = Integer.parseInt(scan.nextLine());
         double price = 0;
-        double totalPrice = 0;
+        double sum = 0;
 
-        switch (drink) {
+
+        switch (beverage) {
             case "Espresso":
                 if (sugar.equals("Without")) {
                     price = 0.90;
@@ -22,6 +23,7 @@ public class CoffeeMachine {
                     price = 1.20;
                 }
                 break;
+
             case "Cappuccino":
                 if (sugar.equals("Without")) {
                     price = 1.00;
@@ -30,6 +32,7 @@ public class CoffeeMachine {
                 } else {
                     price = 1.60;
                 }
+
                 break;
             case "Tea":
                 if (sugar.equals("Without")) {
@@ -39,24 +42,23 @@ public class CoffeeMachine {
                 } else {
                     price = 0.70;
                 }
+
                 break;
         }
-
-        if (sugar.equals("Without")){
+        if (sugar.equals("Without")) {
             price *= 0.65;
         }
-        if (drink.equals("Espresso") && cups >= 5){
+
+        if (beverage.equals("Espresso") && countBeverages >= 5) {
             price *= 0.75;
         }
 
-        totalPrice = price * cups;
+        sum = price * countBeverages;
 
-        if (totalPrice > 15){
-            totalPrice *= 0.80;
+        if (sum > 15) {
+            sum *= 0.80;
         }
 
-        System.out.printf("You bought %d cups of %s for %.2f lv.",cups,drink,totalPrice);
-
-
+        System.out.printf("You bought %d cups of %s for %.2f lv.", countBeverages, beverage, sum);
     }
 }

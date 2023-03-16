@@ -7,8 +7,8 @@ public class CharScanTest {
 
         Scanner scan = new Scanner(System.in);
 
-        char charrTest = scan.nextLine().charAt(0);
+        char charTest = scan.nextLine().charAt(0);
 
-        System.out.printf("Print char: %c", charrTest);
+        System.out.printf("Print char: %c", charTest);
     }
 }

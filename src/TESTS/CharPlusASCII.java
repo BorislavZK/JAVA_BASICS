@@ -10,8 +10,9 @@ public class CharPlusASCII {
 
         for (int i = 0; i <= test.length() - 1; i++) {
 
-            char currentChar = test.charAt(i);
-            int asciiNum = currentChar;
+            //int asciiNum = currentChar;
+            int asciiNum = test.charAt(i);
+
             asciiSum += asciiNum;
 
             System.out.printf("Current ASCII NUM = %d\n", asciiNum);

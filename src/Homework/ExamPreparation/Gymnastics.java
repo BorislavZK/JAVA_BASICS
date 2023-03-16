@@ -1,5 +1,6 @@
 package Homework.ExamPreparation;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Gymnastics {
@@ -8,7 +9,7 @@ public class Gymnastics {
 
         Scanner scan = new Scanner(System.in);
 
-
+        
         String country = scan.nextLine();
         String type = scan.nextLine();
 
