@@ -17,7 +17,6 @@ public class FitnessCenter {
         int proteinCounter = 0;
         int workoutCounter = 0;
 
-
         for (int i = 1; i <= visitors; i++) {
 
             String activity = scanner.nextLine();
@@ -42,14 +41,12 @@ public class FitnessCenter {
                 proteinBarCounter++;
             }
 
-
         }
 
         //double workoutPer = (visitors / 100.00) * workoutCounter;
         double workoutPer = (1.00 * workoutCounter / visitors) * 100;
         //double proteinPer = (visitors / 100.00) * proteinCounter;
         double proteinPer = (1.00 * proteinCounter / visitors) * 100;
-
 
         System.out.printf("%d - back\n", backCounter);
         System.out.printf("%d - chest\n", chestCounter);
